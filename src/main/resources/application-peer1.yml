@@ -1,0 +1,15 @@
+eureka:
+  instance:
+    #集群的时候这里不能是一样的
+    hostname: localhost
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://192.168.1.2:1112/eureka/
+spring:
+  application:
+    name: eureka-server
+server:
+  port: 1111
+
